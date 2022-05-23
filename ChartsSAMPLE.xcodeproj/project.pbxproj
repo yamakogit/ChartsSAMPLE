@@ -13,6 +13,7 @@
 		E1A1BD7A2839DF6D00DA0E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A1BD782839DF6D00DA0E49 /* Main.storyboard */; };
 		E1A1BD7C2839DF7000DA0E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A1BD7B2839DF7000DA0E49 /* Assets.xcassets */; };
 		E1A1BD7F2839DF7000DA0E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A1BD7D2839DF7000DA0E49 /* LaunchScreen.storyboard */; };
+		E1A1BD882839E19900DA0E49 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E1A1BD872839E19900DA0E49 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A1BD882839E19900DA0E49 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ChartsSAMPLE;
+			packageProductDependencies = (
+				E1A1BD872839E19900DA0E49 /* Charts */,
+			);
 			productName = ChartsSAMPLE;
 			productReference = E1A1BD6F2839DF6D00DA0E49 /* ChartsSAMPLE.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = E1A1BD662839DF6D00DA0E49;
+			packageReferences = (
+				E1A1BD862839E19900DA0E49 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = E1A1BD702839DF6D00DA0E49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1A1BD862839E19900DA0E49 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1A1BD872839E19900DA0E49 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A1BD862839E19900DA0E49 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1A1BD672839DF6D00DA0E49 /* Project object */;
 }
